@@ -1,9 +1,31 @@
+import { RouterProvider, ScrollRestoration, createBrowserRouter } from 'react-router-dom';
+import Layout from 'src/layouts/Layout';
+import Home from 'src/pages/Home';
+
+const router = createBrowserRouter(
+	[
+		{
+			element: (
+				<>
+					<ScrollRestoration getKey={(location) => location.path} />
+					<Layout />
+				</>
+			),
+			children: [
+				{
+					path: '/',
+					element: <Home />,
+				},
+			],
+		},
+	],
+	{
+		future: { v7_normalizeFormMethod: true },
+	},
+);
+
 function App() {
-	return (
-		<div className='bg-gradient-to-b from-blue-600 to-violet-600 text-white flex items-center justify-center h-screen text-3xl'>
-			<p>{import.meta.env.VITE_APP_NAME}</p>
-		</div>
-	);
+	return <RouterProvider router={router} />;
 }
 
 export default App;
