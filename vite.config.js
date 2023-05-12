@@ -7,7 +7,7 @@ import eslint from 'vite-plugin-eslint';
 export default defineConfig({
 	server: {
 		host: true,
-		port: 5000
+		port: 5005
 	},
 	plugins: [react(), eslint()],
 	resolve: {
