@@ -3,11 +3,12 @@ import '@mantine/core/styles.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from 'src/App';
-import 'src/styles/index.css';
+import 'src/styles/tailwind.css';
+import 'src/styles/normalize.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
-		<MantineProvider withGlobalStyles withNormalizeCSS>
+		<MantineProvider>
 			<App />
 		</MantineProvider>
 	</React.StrictMode>,
