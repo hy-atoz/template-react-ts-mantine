@@ -1,13 +1,11 @@
 import { Outlet } from 'react-router-dom';
 
-const Layout = () => {
+const Layout: React.FC = () => {
 	return (
-		<>
-			<main>
-				<Outlet />
-			</main>
-		</>
+		<main>
+			<Outlet />
+		</main>
 	);
 };
 
-export default Layout;
+export { Layout };

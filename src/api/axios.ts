@@ -1,85 +1,43 @@
-import axios from 'axios';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import axios, { AxiosInstance, AxiosRequestConfig, InternalAxiosRequestConfig } from 'axios';
+import { STORAGE_KEYS } from 'src/constants/storageKeys';
+import { getSessionStorage } from 'src/utils/getSetStorage';
 
-const refreshOpt = {
-	refreshQueue: [],
-	isRefreshing: false,
+const serverAxiosParams = {
+	baseURL: import.meta.env.VITE_API_BASE_URL,
 };
 
-// status code that will hit refresh token
-const statusCode = [401];
-// custom logic to trigger refresh token
-const customRefreshTrigger = (response) => {
-	return true;
-};
-const refreshUrl = 'https://dev-thailotto.devtoz.com/app/api/auth/refresh';
-const getRefreshToken = (response) => response.data.data.content.accessToken;
-const processQueue = (error, token = null) => {
-	refreshOpt.refreshQueue.forEach((prom) => {
-		if (error) {
-			prom.reject(error);
-		} else {
-			prom.resolve(token);
+export const serverAxiosInstance = axios.create(serverAxiosParams);
+
+serverAxiosInstance.interceptors.request.use(
+	(config: InternalAxiosRequestConfig<any>) => {
+		const accessToken = getSessionStorage(STORAGE_KEYS.accessToken);
+
+		if (accessToken) {
+			// eslint-disable-next-line no-param-reassign
+			config.headers.Authorization = `Bearer ${accessToken}`;
 		}
-	});
 
-	refreshOpt.refreshQueue = [];
-};
-const tokenKey = 'token';
-
-const authPrefix = 'Bearer ';
-const handleError = (error) => error;
-
-// Function that will be called to refresh authorization
-const refreshAuthLogic = () => {
-	if (!refreshOpt.isRefreshing) {
-		refreshOpt.isRefreshing = true;
-		return axios
-			.post(refreshUrl)
-			.then((response) => getRefreshToken(response))
-			.then((token) => {
-				sessionStorage.setItem(tokenKey, token);
-				refreshOpt.isRefreshing = false;
-				processQueue(null, token);
-				return token;
-			})
-			.catch((error) => {
-				refreshOpt.isRefreshing = false;
-				processQueue(error, null);
-				return Promise.reject(error);
-			});
-	} else {
-		return new Promise((resolve, reject) => {
-			refreshOpt.refreshQueue.push({ resolve, reject });
-		});
+		return config;
+	},
+	(error) => {
+		return Promise.reject(error);
 	}
+);
+
+const api = (axiosInstance: AxiosInstance) => {
+	return {
+		get: (url: string, config: AxiosRequestConfig<any> | undefined) =>
+			axiosInstance.get(url, config),
+		delete: (url: string, config: AxiosRequestConfig<any> | undefined) =>
+			axiosInstance.delete(url, config),
+		post: (url: string, body: any, config: AxiosRequestConfig<any> | undefined) =>
+			axiosInstance.post(url, body, config),
+		put: (url: string, body: any, config: AxiosRequestConfig<any> | undefined) =>
+			axiosInstance.put(url, body, config),
+		patch: (url: string, body: any, config: AxiosRequestConfig<any> | undefined) =>
+			axiosInstance.patch(url, body, config),
+	};
 };
 
-// Obtain the fresh token each time the function is called
-function getAccessToken() {
-	return sessionStorage.getItem(tokenKey);
-}
-
-// Use interceptor to inject the token to requests
-axios.interceptors.request.use((request) => {
-	request.headers['Authorization'] = `${authPrefix}${getAccessToken()}`;
-	return request;
-});
-
-axios.interceptors.response.use(undefined, (error) => {
-	const {
-		config,
-		response,
-		response: { status },
-	} = error;
-	const originalRequest = config;
-	if (statusCode.includes(status) && customRefreshTrigger(response) && !originalRequest._retry) {
-		originalRequest._retry = true;
-		return refreshAuthLogic().then((token) => {
-			originalRequest.headers['Authorization'] = `${authPrefix}${token}`;
-			return axios(originalRequest);
-		});
-	}
-	return Promise.reject(handleError(error));
-});
-
-export default axios;
+export const serverApi = api(serverAxiosInstance);
