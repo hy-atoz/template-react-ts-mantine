@@ -1,26 +1,26 @@
 .list {
-  background-color: var(--mantine-color-gray-9);
-  border-radius: var(--mantine-radius-xl);
-  border: none;
-  width: fit-content;
+	background-color: var(--mantine-color-gray-9);
+	border-radius: var(--mantine-radius-xl);
+	border: none;
+	width: fit-content;
 
-  &::before {
-    border: none;
-  }
+	&::before {
+		border: none;
+	}
 }
 
 .tab {
-  background-color: var(--mantine-color-gray-9);
-  border: none;
-  border-radius: var(--mantine-radius-xl);
-  color: white;
-  margin: 10px;
+	background-color: var(--mantine-color-gray-9);
+	border: none;
+	border-radius: var(--mantine-radius-xl);
+	color: white;
+	margin: 10px;
 
-  &[data-active] {
-    background-color: var(--mantine-color-grape-9);
-  }
+	&[data-active] {
+		background-color: var(--mantine-color-grape-9);
+	}
 }
 
 .panel {
-  border: none;
+	border: none;
 }
