@@ -10,6 +10,7 @@
 		"build:iqa": "tsc && vite build --mode iqa",
 		"build:qa": "tsc && vite build --mode qa",
 		"build:uat": "tsc && vite build --mode uat",
+		"build:iprod": "tsc && vite build --mode iprod",
 		"build:prod": "tsc && vite build --mode prod",
 		"format": "npx prettier --write .",
 		"lint": "npx eslint --ext .tsx --ext .ts src --fix",
