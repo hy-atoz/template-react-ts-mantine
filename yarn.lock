@@ -1586,10 +1586,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@mantine/core@7.0.0-beta.4":
-  version "7.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.0.0-beta.4.tgz#31e0c39fb4b778a28d19e9df1aa280fb46ef509d"
-  integrity sha512-zRu15xh7TP9tRtd+g/Ink+eUaSHsfoc/YnwRHgKzcwOAe6Smk97Exca9OOaoiu/VrdMdUv3nSuwcZOHb1NoUUQ==
+"@mantine/core@7.0.0-beta.6":
+  version "7.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.0.0-beta.6.tgz#b5646db95032a1a7f8318175f088829be6375531"
+  integrity sha512-BD9xjYhOJe49GJlOjBzu4tXGP/lnfKokIlZ+ki7k+7O0JNkLePZrWkiuN5PptQUOn5AJBZDOw5DMgtyJIiah5w==
   dependencies:
     "@floating-ui/react" "^0.24.8"
     clsx "2.0.0"
@@ -1598,25 +1598,25 @@
     react-textarea-autosize "8.5.2"
     type-fest "^3.13.1"
 
-"@mantine/dates@7.0.0-beta.4":
-  version "7.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@mantine/dates/-/dates-7.0.0-beta.4.tgz#13db37dc424fc566364cee0a94afccbdfd5db22a"
-  integrity sha512-02KbveCNVCYx+V6HJDIZfluh/UceB2tucCnLb1mPCpPhLmdz3x0KCx/oqd1yj65nZS4+ff1O4Lh73vQNeRUfAQ==
+"@mantine/dates@7.0.0-beta.6":
+  version "7.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@mantine/dates/-/dates-7.0.0-beta.6.tgz#379acb37d8165750b0f8f074b74ef518db01aab7"
+  integrity sha512-ZMVJfj6tOvMtE/E4LGQC9hPEHnF/NmKkwAYbdZ1cdGWKvYNOkNmg6Fb9MS28jicPANavXNRYKJDhu3zlMATDCw==
   dependencies:
     clsx "2.0.0"
 
-"@mantine/form@7.0.0-beta.4":
-  version "7.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@mantine/form/-/form-7.0.0-beta.4.tgz#74e23d9b515066b0f14bb4b1c3422616fc6fc155"
-  integrity sha512-Dmf83MJ3sxiUCWqwoVD9M9aMz37xGgKyjcX9KVPylNvVNvIGGzQPh1KgC11FGaBTTWBt7PXPaTqXoQxyIVCZeA==
+"@mantine/form@7.0.0-beta.6":
+  version "7.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@mantine/form/-/form-7.0.0-beta.6.tgz#efdc7f902aebdcd5774acc732f8c21fb19a96f0e"
+  integrity sha512-/BFh3bT46MD03Q3MhJzsXL48joFzCTX5a18DjkO3SiZIGHEkG400/smI0+1Yg19424eZ1SqNk5DERv7ASTze1g==
   dependencies:
     fast-deep-equal "^3.1.3"
     klona "^2.0.5"
 
-"@mantine/hooks@7.0.0-beta.4":
-  version "7.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.0.0-beta.4.tgz#a28f671c05197dda38d5f5a69ba47fab486f6920"
-  integrity sha512-4cGdR6O7C1DdijqySYD/TKze7sBXoKXtXAgkeZniwgYE108Q6PN1r3/FvpIEiP1GNb7ICGW86/OaAU6IM7+rxg==
+"@mantine/hooks@7.0.0-beta.6":
+  version "7.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.0.0-beta.6.tgz#72b439f1080318a1470544a7bbb1149c31c1235f"
+  integrity sha512-GZCNkfVNxRCemEnPnekKZJUQFBSVkLO1ZXpJBEg7a6UTi8+WHHeYWOYfNq27C19g18iCSKw/XFZA6XXUd8Z7Tw==
 
 "@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1":
   version "5.1.1-v1"
@@ -1658,10 +1658,10 @@
     picocolors "^1.0.0"
     tslib "^2.6.0"
 
-"@remix-run/router@1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.8.0.tgz#e848d2f669f601544df15ce2a313955e4bf0bafc"
-  integrity sha512-mrfKqIHnSZRyIzBcanNJmVQELTnX+qagEDlcKO90RgRBVOZGSGvZKeDihTRfWcqoDn5N/NkUcwWTccnpN18Tfg==
+"@remix-run/router@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.9.0.tgz#9033238b41c4cbe1e961eccb3f79e2c588328cf6"
+  integrity sha512-bV63itrKBC0zdT27qYm6SDZHlkXwFL1xMBuhkn+X7l0+IIhNaH5wuuvZKp6eKhCD4KFhujhfhCT1YxXW6esUIA==
 
 "@rollup/pluginutils@^4.2.1":
   version "4.2.1"
@@ -1785,17 +1785,17 @@
   resolved "https://registry.yarnpkg.com/@tanstack/eslint-plugin-query/-/eslint-plugin-query-4.34.1.tgz#e3d8452461d8d796afd2e47a6aec11fd606b2a53"
   integrity sha512-RflOwyXamuHhuMX5RL6wtKiVw9Hi5Hhiv9gW2/ICVc4omflB+GflrxwvQ+EWRKrSRv3C0YcR0UzRxuiZ4mLq7Q==
 
-"@tanstack/query-core@4.35.0":
-  version "4.35.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.35.0.tgz#61e5cf9363b423ed665740c422902e65619eb7da"
-  integrity sha512-4GMcKQuLZQi6RFBiBZNsLhl+hQGYScRZ5ZoVq8QAzfqz9M7vcGin/2YdSESwl7WaV+Qzsb5CZOAbMBes4lNTnA==
+"@tanstack/query-core@4.35.3":
+  version "4.35.3"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.35.3.tgz#1c127e66b4ad1beeac052db83a812d7cb67369e1"
+  integrity sha512-PS+WEjd9wzKTyNjjQymvcOe1yg8f3wYc6mD+vb6CKyZAKvu4sIJwryfqfBULITKCla7P9C4l5e9RXePHvZOZeQ==
 
-"@tanstack/react-query@^4.35.0":
-  version "4.35.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.35.0.tgz#6286d2706e69384accc4d6b9ff8e4becd427db74"
-  integrity sha512-LLYDNnM9ewYHgjm2rzhk4KG/puN2rdoqCUD+N9+V7SwlsYwJk5ypX58rpkoZAhFyZ+KmFUJ7Iv2lIEOoUqydIg==
+"@tanstack/react-query@^4.35.3":
+  version "4.35.3"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.35.3.tgz#03d726ef6a19d426166427c6539b003dd9606d1b"
+  integrity sha512-UgTPioip/rGG3EQilXfA2j4BJkhEQsR+KAbF+KIuvQ7j4MkgnTCJF01SfRpIRNtQTlEfz/+IL7+jP8WA8bFbsw==
   dependencies:
-    "@tanstack/query-core" "4.35.0"
+    "@tanstack/query-core" "4.35.3"
     use-sync-external-store "^1.2.0"
 
 "@types/eslint@^8.4.5":
@@ -1821,10 +1821,10 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/node@^20.6.0":
-  version "20.6.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.6.0.tgz#9d7daa855d33d4efec8aea88cd66db1c2f0ebe16"
-  integrity sha512-najjVq5KN2vsH2U/xyh2opaSEz6cZMR2SetLIlxlj08nOcmPOemJmUK2o4kUzfLqfrWE0PIrNeE16XhYDd3nqg==
+"@types/node@^20.6.2":
+  version "20.6.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.6.2.tgz#a065925409f59657022e9063275cd0b9bd7e1b12"
+  integrity sha512-Y+/1vGBHV/cYk6OI1Na/LHzwnlNCAfU3ZNGrc1LdRe/LAIbdDPTTv/HU3M7yXN448aTVDq3eKRm2cg7iKLb8gw==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -4539,20 +4539,20 @@ react-remove-scroll@^2.5.6:
     use-callback-ref "^1.3.0"
     use-sidecar "^1.1.2"
 
-react-router-dom@^6.15.0:
-  version "6.15.0"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.15.0.tgz#6da7db61e56797266fbbef0d5e324d6ac443ee40"
-  integrity sha512-aR42t0fs7brintwBGAv2+mGlCtgtFQeOzK0BM1/OiqEzRejOZtpMZepvgkscpMUnKb8YO84G7s3LsHnnDNonbQ==
+react-router-dom@^6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.16.0.tgz#86f24658da35eb66727e75ecbb1a029e33ee39d9"
+  integrity sha512-aTfBLv3mk/gaKLxgRDUPbPw+s4Y/O+ma3rEN1u8EgEpLpPe6gNjIsWt9rxushMHHMb7mSwxRGdGlGdvmFsyPIg==
   dependencies:
-    "@remix-run/router" "1.8.0"
-    react-router "6.15.0"
+    "@remix-run/router" "1.9.0"
+    react-router "6.16.0"
 
-react-router@6.15.0:
-  version "6.15.0"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.15.0.tgz#bf2cb5a4a7ed57f074d4ea88db0d95033f39cac8"
-  integrity sha512-NIytlzvzLwJkCQj2HLefmeakxxWHWAP+02EGqWEZy+DgfHHKQMUoBBjUQLOtFInBMhWtb3hiUy6MfFgwLjXhqg==
+react-router@6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.16.0.tgz#abbf3d5bdc9c108c9b822a18be10ee004096fb81"
+  integrity sha512-VT4Mmc4jj5YyjpOi5jOf0I+TYzGpvzERy4ckNSvSh2RArv8LLoCxlsZ2D+tc7zgjxcY34oTz2hZaeX5RVprKqA==
   dependencies:
-    "@remix-run/router" "1.8.0"
+    "@remix-run/router" "1.9.0"
 
 react-style-singleton@^2.2.1:
   version "2.2.1"
