@@ -46,6 +46,7 @@ module.exports = {
 				allowAsProps: true,
 			},
 		],
+		'spaced-comment': 1,
 		'@typescript-eslint/no-use-before-define': 1,
 		'@typescript-eslint/ban-ts-comment': 1,
 	},
